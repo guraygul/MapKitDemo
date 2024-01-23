@@ -18,26 +18,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w6g-D2-rHf">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="603"/>
                                 <standardMapConfiguration key="preferredConfiguration"/>
                             </mapView>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fwU-pV-2q5">
+                                <rect key="frame" x="20" y="59" width="353" height="76"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2P-eT-n2s">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add a description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EP6-9v-EPN">
+                                        <rect key="frame" x="0.0" y="42" width="353" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f0-2F-2n6">
+                                <rect key="frame" x="166" y="783" width="61" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Save"/>
+                                <connections>
+                                    <action selector="didSaveTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QAd-vA-SpO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="w6g-D2-rHf" secondAttribute="trailing" id="8kW-8H-7Jf"/>
-                            <constraint firstItem="w6g-D2-rHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Fvy-gX-zlj"/>
-                            <constraint firstItem="w6g-D2-rHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ili-Qh-gQJ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="w6g-D2-rHf" secondAttribute="bottom" id="rZF-mm-cpV"/>
+                            <constraint firstItem="fwU-pV-2q5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C7E-pb-elb"/>
+                            <constraint firstItem="fwU-pV-2q5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="DMG-cj-Knv"/>
+                            <constraint firstItem="w6g-D2-rHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="EJZ-6V-rPl"/>
+                            <constraint firstItem="w6g-D2-rHf" firstAttribute="top" secondItem="fwU-pV-2q5" secondAttribute="bottom" constant="20" id="EkB-cj-0ao"/>
+                            <constraint firstItem="fwU-pV-2q5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="e3K-kI-FIk"/>
+                            <constraint firstItem="1f0-2F-2n6" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="soW-oU-zRq"/>
+                            <constraint firstItem="w6g-D2-rHf" firstAttribute="centerX" secondItem="1f0-2F-2n6" secondAttribute="centerX" id="u8L-CB-DIS"/>
+                            <constraint firstItem="fwU-pV-2q5" firstAttribute="centerX" secondItem="w6g-D2-rHf" secondAttribute="centerX" id="vS6-9S-q8Y"/>
+                            <constraint firstItem="1f0-2F-2n6" firstAttribute="top" secondItem="w6g-D2-rHf" secondAttribute="bottom" constant="25" id="yp9-se-U1o"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="descriptionTextField" destination="EP6-9v-EPN" id="u8Y-p1-rxw"/>
                         <outlet property="mapView" destination="w6g-D2-rHf" id="3iU-J2-yGU"/>
+                        <outlet property="nameTextField" destination="h2P-eT-n2s" id="F72-9r-EWc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-7" y="-27"/>
+            <point key="canvasLocation" x="-8.3969465648854964" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

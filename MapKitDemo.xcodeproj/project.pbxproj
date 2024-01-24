@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		104E2D002B5D96CE006CDA5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E2CFF2B5D96CE006CDA5E /* AppDelegate.swift */; };
 		104E2D022B5D96CE006CDA5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E2D012B5D96CE006CDA5E /* SceneDelegate.swift */; };
-		104E2D042B5D96CE006CDA5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E2D032B5D96CE006CDA5E /* ViewController.swift */; };
+		104E2D042B5D96CE006CDA5E /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104E2D032B5D96CE006CDA5E /* MapViewController.swift */; };
 		104E2D072B5D96CE006CDA5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104E2D052B5D96CE006CDA5E /* Main.storyboard */; };
 		104E2D0A2B5D96CE006CDA5E /* MapKitDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 104E2D082B5D96CE006CDA5E /* MapKitDemo.xcdatamodeld */; };
 		104E2D0C2B5D96CF006CDA5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 104E2D0B2B5D96CF006CDA5E /* Assets.xcassets */; };
 		104E2D0F2B5D96CF006CDA5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104E2D0D2B5D96CF006CDA5E /* LaunchScreen.storyboard */; };
+		10F1F1032B612E5100357D7C /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F1F1022B612E5100357D7C /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		104E2CFC2B5D96CE006CDA5E /* MapKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		104E2CFF2B5D96CE006CDA5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		104E2D012B5D96CE006CDA5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		104E2D032B5D96CE006CDA5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		104E2D032B5D96CE006CDA5E /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		104E2D062B5D96CE006CDA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		104E2D092B5D96CE006CDA5E /* MapKitDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MapKitDemo.xcdatamodel; sourceTree = "<group>"; };
 		104E2D0B2B5D96CF006CDA5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		104E2D0E2B5D96CF006CDA5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		104E2D102B5D96CF006CDA5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F1F1022B612E5100357D7C /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,8 @@
 			children = (
 				104E2CFF2B5D96CE006CDA5E /* AppDelegate.swift */,
 				104E2D012B5D96CE006CDA5E /* SceneDelegate.swift */,
-				104E2D032B5D96CE006CDA5E /* ViewController.swift */,
+				10F1F1022B612E5100357D7C /* ListViewController.swift */,
+				104E2D032B5D96CE006CDA5E /* MapViewController.swift */,
 				104E2D052B5D96CE006CDA5E /* Main.storyboard */,
 				104E2D0B2B5D96CF006CDA5E /* Assets.xcassets */,
 				104E2D0D2B5D96CF006CDA5E /* LaunchScreen.storyboard */,
@@ -141,9 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				104E2D042B5D96CE006CDA5E /* ViewController.swift in Sources */,
+				104E2D042B5D96CE006CDA5E /* MapViewController.swift in Sources */,
 				104E2D002B5D96CE006CDA5E /* AppDelegate.swift in Sources */,
 				104E2D0A2B5D96CE006CDA5E /* MapKitDemo.xcdatamodeld in Sources */,
+				10F1F1032B612E5100357D7C /* ListViewController.swift in Sources */,
 				104E2D022B5D96CE006CDA5E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
